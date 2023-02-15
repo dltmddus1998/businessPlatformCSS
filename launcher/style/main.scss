@@ -1,0 +1,41 @@
+:root {
+  --container-border-color: #060047;
+  --container--bg-color: #f5f5f5;
+}
+
+.container {
+  border: 3px solid var(--container-border-color);
+  border-radius: 12px;
+  margin-top: 120px;
+  background-color: var(--container--bg-color);
+}
+
+.apps {
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-gap: 12px;
+}
+
+.item {
+  border: 2px solid var(--container-border-color);
+  border-radius: 12px;
+  height: 100px;
+  width: calc(100% - 50px);
+  background-color: white;
+  float: right;
+  position: relative;
+  transition: background 0.4s ease;
+  &__icon {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.draggable {
+  cursor: move;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
