@@ -3,6 +3,7 @@
   --underline: #fafafa;
   --blue-button: #6d9fff;
   --blue-text: cadetblue;
+  --card-border: #2b3467;
 }
 
 .header {
@@ -28,6 +29,7 @@
 
 h2 {
   cursor: pointer;
+  margin-top: 24px;
   margin-left: 40px;
   font-weight: 900;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -88,6 +90,11 @@ hr {
   cursor: pointer;
 }
 
+.document {
+  width: calc(100% - 40px);
+  margin: 24px auto;
+}
+
 .search {
   margin-top: 24px;
   margin-left: 64px;
@@ -119,23 +126,25 @@ hr {
   border-radius: 2px;
 }
 
-.console {
+console {
   background-color: black;
   border: 1px solid black;
   border-radius: 2px;
   color: white;
 }
 
-.slider-container {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.img-slider {
   position: relative;
-  width: 100vw;
   height: 400px;
 }
 
-.container__slider .slider-container {
+.img-slider .slider-container {
   position: absolute;
   width: 300%;
   top: 0;
@@ -144,7 +153,7 @@ hr {
   animation: slider 26s infinite;
 }
 
-.container__slider .slider-container .slider {
+.img-slider .slider-container .slide {
   position: relative;
   width: 33.333333%;
   height: 100%;
@@ -152,7 +161,7 @@ hr {
   overflow: hidden;
 }
 
-.container__slider .slider-container .first .second .third .fourth {
+.img-slider .slider-container .slide .first .second .third .fourth {
   display: block;
   width: 100%;
   height: 100%;
@@ -189,34 +198,56 @@ hr {
   background-color: #fdebed;
 }
 
-@keyframes container__slider {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    lerft: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
+.grid-card {
+  margin: 24px auto;
+}
+
+.card-container {
+  display: grid;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 100%;
+  grid-template-columns: repeat(4, 20%);
+  grid-gap: 96px;
+  padding: 24px;
+}
+
+.card {
+  border-radius: 6px;
+  box-shadow: none;
+  width: 300px;
+  height: 200px;
+}
+
+.card1 {
+  border: 1px solid #ffb84c;
+  background-color: #ffb84c;
+}
+
+.card2 {
+  border: 1px solid #6096b4;
+  background-color: #6096b4;
+}
+
+.card3 {
+  border: 1px solid #a7727d;
+  background-color: #a7727d;
+}
+
+.card4 {
+  border: 1px solid #eddbc7;
+  background-color: #eddbc7;
+}
+
+.card5 {
+  border: 1px solid #84d2c5;
+  background-color: #84d2c5;
+}
+
+.card6 {
+  border: 1px soslid;
 }
 
 /*# sourceMappingURL=main.css.map */
