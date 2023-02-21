@@ -174,10 +174,16 @@ hr {
 }
 
 .console {
-  background-color: black;
-  border: 1px solid black;
+  background-color: #1e232e;
+  border: 1px solid #1e232e;
   border-radius: 2px;
   color: white;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.console:hover {
+  text-decoration-line: none;
 }
 
 * {
@@ -436,6 +442,7 @@ hr {
 }
 
 .footer {
+  margin-top: 1100px;
   border-top: 1px solid var(--underline);
   text-align: center;
 }
