@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/main.css" />
-    <script src="src/app.js"></script>
-    <title>Hybrix Business Platform</title>
+    <link rel="stylesheet" href="" />
+    <title>Document</title>
   </head>
   <body>
     <div class="app">
-      <!-- <div class="header"> -->
       <header class="banner">
         <div class="banner__top">
           <div class="banner__top__left">
@@ -64,42 +63,54 @@
           <div class="banner__bottom__right">
             <img src="assets/search-interface-symbol.png" alt="icon" class="icon search" />
             <button class="button ask">문의하기</button>
-            <button class="button console" href="console.html">콘솔</button>
-            <a href=""></a>
+            <button class="button console">콘솔</button>
           </div>
         </div>
       </header>
-      <!-- </div> -->
       <main class="document">
-        <div class="img-slider">
-          <div class="slider-container">
-            <div class="slide">
-              <!-- <div class="first"></div> -->
+        <div class="myService">
+          <div class="myService__left">
+            <div class="myprofile">
+              <div class="myprofile__img">
+                <img src="assets/colorUser.png" alt="icon" class="color-user" />
+              </div>
+              <h3 class="myprofile__nickname">user123</h3>
             </div>
-            <div class="slide">
-              <div class="second"></div>
-            </div>
-            <div class="slide">
-              <div class="third"></div>
-            </div>
-            <div class="slide">
-              <div class="first"></div>
+            <div class="services">
+              <h4 class="services__title">마이서비스</h4>
+              <hr class="services__hr" />
+              <div id="service">보낸 제안</div>
+              <div id="service">판매 관리</div>
+              <div id="service">나의 서비스</div>
+              <div id="service">수익 관리</div>
+              <div id="service">광고 관리</div>
+              <div id="service">광고 신청</div>
+              <div id="service">마일리지</div>
+              <div id="service">메시지 응답 관리</div>
             </div>
           </div>
-        </div>
-        <div class="card-title-container">
-          <h1 class="card-title">다채로운 컨텐츠</h1>
-        </div>
-        <br />
-        <div class="card-container">
-          <div class="card card1"></div>
-          <div class="card card2"></div>
-          <div class="card card3"></div>
-          <div class="card card4"></div>
-          <div class="card card5"></div>
-          <div class="card card6"></div>
-          <div class="card card7"></div>
-          <div class="card card8"></div>
+          <div class="myService__right">
+            <div class="management">
+              <div class="management__dashboard">
+                <div class="management__dashboard__container">
+                  <div class="dashboard process"></div>
+                  <div class="dashboard sent"></div>
+                  <div class="dashboard cancelOrSolved"></div>
+                  <div class="dashboard total"></div>
+                </div>
+              </div>
+              <div class="management__csv">
+                <div class="radiobutton">
+                  <input type="radio" checked class="radio updateAsc" /> 업데이트 순 <input type="radio" class="radio sentAsc" /> 발송 예정일 순
+                  <input type="radio" class="radio completeAsc" /> 거래 완료 순 <input type="radio" class="radio dateAsc" /> 주문일시 순
+                </div>
+                <div class="excelDownload">
+                  <button type="submit" class="excelDownload__button">엑셀 다운로드</button>
+                </div>
+              </div>
+              <div class="excelDownload__list"></div>
+            </div>
+          </div>
         </div>
       </main>
       <footer class="footer">

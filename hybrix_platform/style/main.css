@@ -4,16 +4,42 @@
   --blue-button: #6d9fff;
   --blue-text: cadetblue;
   --card-border: #2b3467;
+  --scrollbar-color: #bface2;
+  --radiobutton-color: #ffb84c;
 }
 
-.header {
+.app {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 2000px;
+}
+
+header {
+  background-color: #fffbf5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 0 24px 0;
+  z-index: 20;
+  border-bottom: 1px solid #e4e5ed;
+  position: sticky;
+  top: 0px;
+  left: 0;
+  right: 0;
+}
+
+.banner {
   overflow: hidden;
   margin: 0;
 }
-
 .banner__top {
+  margin-bottom: 0px;
   display: flex;
 }
 .banner__top__left {
@@ -68,6 +94,7 @@ li:hover {
 a {
   text-decoration-line: none;
   color: black;
+  padding: 0px;
 }
 
 a:hover {
@@ -78,6 +105,7 @@ a:hover {
 
 p {
   position: relative;
+  margin-top: 9px;
 }
 
 hr {
@@ -91,6 +119,7 @@ hr {
 }
 
 .document {
+  height: 100%;
   width: calc(100% - 40px);
   margin: 24px auto;
 }
@@ -112,12 +141,14 @@ hr {
 .button {
   padding: 8px 16px;
   margin-left: 12px;
+  margin-bottom: 24px;
 }
 
 .button:hover {
   background-color: var(--blue-button);
   color: white;
   border: 1px solid var(--blue-button);
+  cursor: pointer;
 }
 
 .ask {
@@ -126,7 +157,7 @@ hr {
   border-radius: 2px;
 }
 
-console {
+.console {
   background-color: black;
   border: 1px solid black;
   border-radius: 2px;
@@ -199,18 +230,29 @@ console {
 }
 
 .grid-card {
-  margin: 24px auto;
+  margin: auto;
+}
+
+.card-title-container {
+  margin-top: 200px;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
 }
 
 .card-container {
   display: grid;
-  margin-top: 200px;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  width: 100%;
-  grid-template-columns: repeat(4, 20%);
-  grid-gap: 96px;
+  align-items: center;
+  width: calc(100% - 500px);
+  grid-template-columns: repeat(4, 300px);
+  grid-gap: 24px;
   padding: 24px;
 }
 
@@ -247,7 +289,133 @@ console {
 }
 
 .card6 {
-  border: 1px soslid;
+  border: 1px solid #e3dffd;
+  background-color: #e3dffd;
+}
+
+.card7 {
+  border: 1px solid #205e61;
+  background-color: #205e61;
+}
+
+.card8 {
+  border: 1px solid #8ea7e9;
+  background-color: #8ea7e9;
+}
+
+.myService {
+  display: flex;
+  width: calc(100% - 440px);
+  margin: auto;
+}
+.myService__left {
+  margin-left: 48px;
+  margin-top: 24px;
+}
+.myService__right {
+  width: 1000px;
+  margin: 64px 24px 0px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.myprofile {
+  margin: 48px 96px;
+}
+.myprofile__nickname {
+  margin-top: 24px;
+  margin-left: 40px;
+}
+
+.services {
+  margin-left: 64px;
+}
+.services__title {
+  text-align: start;
+}
+.services__hr {
+  margin-top: 24px;
+  border: 1px solid var(--card-border);
+  width: 200px;
+}
+
+#service {
+  margin: 24px 0px 0px 12px;
+  font-weight: lighter;
+}
+
+#service:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.color-user {
+  width: 140px;
+  height: 140px;
+}
+
+.management__dashboard {
+  border: 1px solid #f5f5f8;
+  width: 844px;
+  height: 162px;
+  border-radius: 12px;
+  box-shadow: none;
+  background-color: #f5f5f8;
+  position: static;
+}
+.management__dashboard__container {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+}
+.management__csv {
+  margin-top: 48px;
+  display: flex;
+}
+
+.dashboard {
+  margin: 24px 12px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  width: 187px;
+  height: 114px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: rgba(48, 52, 65, 0.08) 0px 4px 14px 0px;
+}
+
+.radio {
+  margin-left: 24px;
+  background-color: var(--radiobutton-color);
+  cursor: inherit;
+}
+
+.excelDownload {
+  margin-left: 244px;
+}
+.excelDownload__button {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-family: "Metro Sans", sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: normal;
+  padding: 4px 16px;
+}
+.excelDownload__list {
+  margin-top: 24px;
+  margin-left: 12px;
+  border: 1px solid #9a9ba7;
+  border-radius: 8px;
+  width: 844px;
+  height: 600px;
+}
+
+.footer {
+  border-top: 1px solid var(--underline);
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
