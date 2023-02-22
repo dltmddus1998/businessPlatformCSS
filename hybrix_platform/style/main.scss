@@ -11,8 +11,6 @@
 .app {
   display: flex;
   flex-direction: column;
-  // width: 100%;
-  // height: 100%;
 }
 
 body {
@@ -93,10 +91,6 @@ li:hover {
   cursor: pointer;
 }
 
-// .languages {
-//   margin-bottom: 24px;
-// }
-
 a {
   text-decoration-line: none;
   color: black;
@@ -126,19 +120,9 @@ hr {
 
 .document {
   height: 100%;
-  // overflow-y: auto;
   width: calc(100% - 40px);
   margin: 24px auto;
 }
-
-// .document::-webkit-scrollbar {
-//   background-color: var(--scrollbar-color);
-//   width: 6px;
-// }
-
-// .document::-webkit-scrollbar-thumb {
-//   background-color: #301e67;
-// }
 
 .search {
   margin-top: 24px;
@@ -446,3 +430,54 @@ hr {
   border-top: 1px solid var(--underline);
   text-align: center;
 }
+
+// B2B
+.h1-service {
+  margin-left: 24px;
+}
+
+.b2bServices {
+  margin: 194px 24px 24px 24px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 310px);
+    margin: auto;
+  }
+}
+
+.collapse {
+  // width: calc(100% - 200px);
+  // margin: auto;
+  &__header {
+    display: flex;
+  }
+}
+
+.col {
+  margin-top: 24px;
+  width: 200px;
+  height: 114px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cate-icon {
+  width: 48px;
+  height: 48px;
+  &__title {
+    font-size: 14px;
+    line-height: 14px;
+    color: #222222;
+    font-weight: bolder;
+    margin-top: 24px;
+  }
+  &__title:hover {
+    color: var(--blue-text);
+    font-weight: light;
+  }
+}
+
+// .collapse-header {
+
+// }

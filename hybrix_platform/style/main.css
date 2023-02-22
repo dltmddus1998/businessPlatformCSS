@@ -425,4 +425,46 @@ hr {
   text-align: center;
 }
 
+.h1-service {
+  margin-left: 24px;
+}
+
+.b2bServices {
+  margin: 194px 24px 24px 24px;
+}
+.b2bServices__container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 310px);
+  margin: auto;
+}
+
+.collapse__header {
+  display: flex;
+}
+
+.col {
+  margin-top: 24px;
+  width: 200px;
+  height: 114px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cate-icon {
+  width: 48px;
+  height: 48px;
+}
+.cate-icon__title {
+  font-size: 14px;
+  line-height: 14px;
+  color: #222222;
+  font-weight: bolder;
+  margin-top: 24px;
+}
+.cate-icon__title:hover {
+  color: var(--blue-text);
+  font-weight: light;
+}
+
 /*# sourceMappingURL=main.css.map */
