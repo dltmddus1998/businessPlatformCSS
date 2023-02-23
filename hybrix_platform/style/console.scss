@@ -1,0 +1,70 @@
+:root {
+  --bg-color: #ecf2ff;
+  --underline: #e4e5ed;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  list-style-type: none;
+}
+
+header {
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--underline);
+  position: sticky;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  margin: 0 0 24px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+p {
+  text-decoration: none;
+}
+
+p:hover {
+}
+
+.banner {
+  display: flex;
+  &__left {
+    display: flex;
+  }
+  &__title {
+    text-decoration: none;
+  }
+}
+
+ul {
+  display: flex;
+}
+
+li {
+}
+
+.console-menu {
+  display: flex;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+}
