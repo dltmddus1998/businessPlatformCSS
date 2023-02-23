@@ -437,7 +437,7 @@ hr {
 }
 
 .b2bServices {
-  margin: 194px 24px 24px 24px;
+  margin-top: 194px;
   &__container {
     display: flex;
     flex-direction: column;
@@ -447,10 +447,11 @@ hr {
 }
 
 .collapse {
-  // width: calc(100% - 200px);
-  // margin: auto;
   &__header {
     display: flex;
+  }
+  &__bottom {
+    border: 1px solid var(--underline);
   }
 }
 
@@ -465,19 +466,37 @@ hr {
 .cate-icon {
   width: 48px;
   height: 48px;
+  margin-left: auto;
+  margin-right: auto;
   &__title {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 14px;
     color: #222222;
     font-weight: bolder;
     margin-top: 24px;
-  }
-  &__title:hover {
-    color: var(--blue-text);
-    font-weight: light;
+    text-align: center;
   }
 }
 
-// .collapse-header {
+.all-services {
+  width: 200px;
+  height: 42px;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 39.2px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  border: 1px solid #222222;
+  background-color: #ffffff;
+  color: #222222;
+  border-radius: 2px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-// }
+.all-services:hover {
+  cursor: pointer;
+  border: 1px solid var(--blue-button);
+  color: var(--blue-button);
+}
