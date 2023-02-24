@@ -6,6 +6,7 @@
   --card-border: #2b3467;
   --scrollbar-color: #bface2;
   --radiobutton-color: #ffb84c;
+  --tabs-color: #edf1d6;
 }
 
 .app {
@@ -50,6 +51,14 @@ header {
   }
   &__bottom {
     display: flex;
+    &__underline {
+      border: 1px solid lightgray;
+      width: 1920px;
+    }
+  }
+  &__marketplace {
+    background-color: var(--tabs-color);
+    width: 1920px;
   }
 }
 
@@ -504,4 +513,132 @@ hr {
   cursor: pointer;
   border: 1px solid var(--blue-button);
   color: var(--blue-button);
+}
+
+.marketplace {
+  color: var(--blue-text);
+  font-weight: bold;
+  &__title {
+    margin-top: 70px;
+    margin-left: 370px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &__cards {
+    width: 1200px;
+    height: 683px;
+    margin: 0 auto 48px auto;
+  }
+  &__card {
+    &__row {
+      margin-left: 24px;
+    }
+    &__col {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin: 10px auto;
+    }
+  }
+}
+
+.description {
+  &__top {
+    display: flex;
+    &__left {
+      margin: 24px 24px 0 0;
+      padding: 4px 3px;
+      border: 1px solid lightgray;
+      border-radius: 2px;
+      background-color: lightgray;
+      color: gray;
+      width: 50px;
+      height: 22px;
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 12px;
+      letter-spacing: normal;
+    }
+    &__right {
+      margin: 26px 0 0 0;
+      color: gray;
+      font-size: 14px;
+    }
+  }
+  &__middle {
+    margin: 12px 0 24px 0;
+    font-weight: 360;
+    font-size: 14.5px;
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.image {
+  width: calc(652px / 3);
+  height: calc(488px / 3);
+}
+
+.price {
+  font-weight: bold;
+  font-size: 19px;
+  margin-left: 110px;
+}
+
+.review {
+  margin-top: 12px;
+  margin-left: 110px;
+}
+
+.star {
+  display: flex;
+  &-icon {
+    width: 12px;
+    height: 12px;
+  }
+  &-point {
+    margin-left: 4px;
+    color: gray;
+    font-size: 12px;
+  }
+}
+
+.marketplace-clicked {
+  margin-bottom: 24px;
+}
+
+.menu a:hover {
+  text-decoration: none;
+}
+
+.b2c-marketplace {
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.t-menu {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.t-menuList {
+  margin-left: 0;
+}
+
+.k-img {
+  transition: all 0.2s linear;
+  margin: 0px auto;
+}
+
+.k-img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
 }

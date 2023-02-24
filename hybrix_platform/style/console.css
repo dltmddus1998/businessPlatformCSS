@@ -1,0 +1,106 @@
+:root {
+  --bg-color: #ecf2ff;
+  --underline: #e4e5ed;
+  --clicked-accent-color: #526dfe;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 2000px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--underline);
+  position: sticky;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  margin: 0 0 0 0;
+  margin-top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.console-title {
+  margin: 29px 0 0 0;
+}
+
+.banner {
+  margin: 0;
+  overflow: hidden;
+}
+.banner__left {
+  display: flex;
+}
+.banner__right {
+  display: flex;
+  margin-left: 1290px;
+}
+.banner__title {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+}
+
+.console-menu {
+  display: flex;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  margin: 24px 12px 24px 24px;
+}
+
+.icon {
+  margin-left: 12px;
+  width: 16px;
+  height: 16px;
+}
+
+.title {
+  margin-left: 12px;
+}
+
+.console-menu {
+  margin-left: 24px;
+  margin-top: 12px;
+}
+
+.tab {
+  margin-left: 12px;
+}
+
+.user {
+  margin-left: 29px;
+}
+
+.home:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 20px #ddd;
+}
+
+.underline {
+  border: 1px solid var(--clicked-accent-color);
+}
+
+/*# sourceMappingURL=console.css.map */

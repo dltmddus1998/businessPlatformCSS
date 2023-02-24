@@ -6,6 +6,7 @@
   --card-border: #2b3467;
   --scrollbar-color: #bface2;
   --radiobutton-color: #ffb84c;
+  --tabs-color: #edf1d6;
 }
 
 .app {
@@ -51,6 +52,14 @@ header {
 }
 .banner__bottom {
   display: flex;
+}
+.banner__bottom__underline {
+  border: 1px solid lightgray;
+  width: 1920px;
+}
+.banner__marketplace {
+  background-color: var(--tabs-color);
+  width: 1920px;
 }
 
 .b2bTitle {
@@ -495,6 +504,130 @@ hr {
   cursor: pointer;
   border: 1px solid var(--blue-button);
   color: var(--blue-button);
+}
+
+.marketplace {
+  color: var(--blue-text);
+  font-weight: bold;
+}
+.marketplace__title {
+  margin-top: 70px;
+  margin-left: 370px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.marketplace__cards {
+  width: 1200px;
+  height: 683px;
+  margin: 0 auto 48px auto;
+}
+.marketplace__card__row {
+  margin-left: 24px;
+}
+.marketplace__card__col {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.description__top {
+  display: flex;
+}
+.description__top__left {
+  margin: 24px 24px 0 0;
+  padding: 4px 3px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  background-color: lightgray;
+  color: gray;
+  width: 50px;
+  height: 22px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: normal;
+}
+.description__top__right {
+  margin: 26px 0 0 0;
+  color: gray;
+  font-size: 14px;
+}
+.description__middle {
+  margin: 12px 0 24px 0;
+  font-weight: 360;
+  font-size: 14.5px;
+}
+.description__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 217.3333333333px;
+  height: 162.6666666667px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 19px;
+  margin-left: 110px;
+}
+
+.review {
+  margin-top: 12px;
+  margin-left: 110px;
+}
+
+.star {
+  display: flex;
+}
+.star-icon {
+  width: 12px;
+  height: 12px;
+}
+.star-point {
+  margin-left: 4px;
+  color: gray;
+  font-size: 12px;
+}
+
+.marketplace-clicked {
+  margin-bottom: 24px;
+}
+
+.menu a:hover {
+  text-decoration: none;
+}
+
+.b2c-marketplace {
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.t-menu {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.t-menuList {
+  margin-left: 0;
+}
+
+.k-img {
+  transition: all 0.2s linear;
+  margin: 0px auto;
+}
+
+.k-img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
 }
 
 /*# sourceMappingURL=main.css.map */
