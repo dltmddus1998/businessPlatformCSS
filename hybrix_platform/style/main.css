@@ -630,4 +630,19 @@ hr {
   box-sizing: content-box;
 }
 
+.heart-icon {
+  position: relative;
+  top: -150px;
+  left: 180px;
+  width: 24px;
+  height: 24px;
+}
+
+.heart-icon:hover {
+  cursor: pointer;
+  background-color: lightgray;
+  box-shadow: 1px 1px 20px lightgray;
+  border-radius: 4px;
+}
+
 /*# sourceMappingURL=main.css.map */
