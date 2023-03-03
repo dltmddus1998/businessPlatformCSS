@@ -1,0 +1,120 @@
+:root {
+  --font-color: #343a40;
+  --card-background-color: #343a3f;
+  --progress-bar-color: #4650dd;
+}
+
+.document {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: fit-content;
+}
+
+.nft {
+  height: 100vh;
+}
+.nft-container {
+  width: calc(100% - 1300px);
+  margin: 12px auto;
+}
+.nft__title {
+  text-align: center;
+  color: var(--font-color);
+  font-size: 30px;
+  font-weight: bold;
+}
+.nft__description {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 12px;
+}
+.nft__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px lightgray;
+  margin-top: 24px;
+}
+.nft__card-image {
+  height: 700px;
+  border-radius: 15px 15px 0 0;
+}
+.nft__card-middle {
+  padding: 12px;
+}
+.nft__card-middle__title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.nft__card-middle__profile {
+  display: flex;
+}
+.nft__card-middle__profile-image {
+  margin-top: 12px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.nft__card-middle__profile-nickname {
+  font-size: 18px;
+  margin: 20px 0 0 8px;
+  font-weight: 500;
+}
+.nft__card-sellInfo {
+  background-color: var(--card-background-color);
+  color: #fff;
+  padding: 8px;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+}
+.nft__card-sellInfo__top {
+  display: flex;
+  padding: 12px;
+}
+.nft__card-sellInfo__top-price {
+  margin: 0 300px 0 48px;
+}
+.nft__card-sellInfo__top-price__text {
+  font-size: smaller;
+  text-align: center;
+}
+.nft__card-sellInfo__top-price__nbr {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+}
+.nft__card-sellInfo__top-dueDate__text {
+  font-size: smaller;
+  text-align: center;
+}
+.nft__card-sellInfo__top-dueDate__status {
+  margin-top: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+.nft__card-sellInfo__bottom-progressBar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 30px 0 30px;
+}
+.nft__card-sellInfo__bottom-progressBar-progressed {
+  background-color: var(--progress-bar-color);
+  border-radius: 4px 0 0 4px;
+  width: 40%;
+  height: 10px;
+}
+.nft__card-sellInfo__bottom-progressBar-notProgressed {
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+  width: 60%;
+  height: 10px;
+}
+.nft__card-sellInfo__bottom-text {
+  margin: 12px 0;
+  font-size: 14.5px;
+}
+
+/*# sourceMappingURL=web3.css.map */

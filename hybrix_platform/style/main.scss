@@ -160,6 +160,12 @@ hr {
   width: 24px;
   height: 24px;
   cursor: pointer;
+  &-fiverr {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 6px 0 0 6px;
+  }
 }
 
 .document {
@@ -643,6 +649,12 @@ hr {
   text-decoration: none;
 }
 
+.menuList {
+  margin-top: 24px;
+  margin-left: 64px;
+  display: flex;
+}
+
 .b2c-marketplace {
   margin-top: 24px;
   margin-left: auto;
@@ -861,6 +873,279 @@ hr {
 
 .font-color11 {
   color: var(--photo-card-font-color11);
+}
+
+.marketplace__photo {
+  &__row {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  &-card {
+    border: 1px solid lightgray;
+    width: 284px;
+  }
+}
+
+.fiverr {
+  margin-left: 200px;
+  font-size: 48px;
+  font-weight: bold;
+  &-profile {
+    margin-top: 4px;
+    display: flex;
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-profileImg {
+    margin: 4px 10px 10px 10px;
+  }
+  &-img {
+    width: 284px;
+    height: 180px;
+  }
+  &-nickname {
+    font-weight: bold;
+  }
+  &-level {
+    font-weight: 360;
+    color: gray;
+    font-size: 13px;
+  }
+  &-description {
+    margin-top: 12px;
+    padding: 8px;
+  }
+  &-review {
+    display: flex;
+    &__nbr {
+      display: flex;
+    }
+  }
+  &-bottom {
+    display: flex;
+    padding: 8px 0;
+    &__right {
+      display: flex;
+      margin-left: 120px;
+    }
+  }
+}
+
+.start {
+  &-at {
+    margin-top: 9px;
+    font-size: 10px;
+  }
+  &-price {
+    margin-top: 3px;
+    font-size: 20px;
+    font-weight: light;
+    margin-left: 10px;
+  }
+}
+
+.star {
+  &_nbr {
+    color: #ffc109;
+    margin: 4px;
+    font-weight: bold;
+  }
+  &-fiverr {
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+  }
+}
+
+.review_cnt {
+  font-weight: 360;
+  color: lightgray;
+  margin-top: 3px;
+}
+
+.tab {
+  color: var(--blue-text);
+}
+
+.postype-creation {
+  width: 100vw;
+  &-cards {
+    width: calc(100% - 500px);
+    margin: 0 auto;
+  }
+  &-col:hover {
+    cursor: pointer;
+    color: #000000;
+    font-weight: 400;
+  }
+  &__image {
+    width: 256px;
+    height: 174px;
+    border-radius: 15px;
+  }
+  &-card {
+    width: 256px;
+    height: 304px;
+  }
+  &__description {
+    margin: 8px 0;
+    color: gray;
+    font-size: 14px;
+  }
+  &__title {
+    font-weight: bold;
+  }
+  &__bottom {
+    display: flex;
+    padding: 6px 6px 6px 0;
+    font-size: 12px;
+    &-right {
+      display: flex;
+    }
+  }
+  &__nickname {
+    font-size: 12px;
+  }
+  &__points {
+    margin-left: 8px;
+    color: gray;
+  }
+  &__views {
+    display: flex;
+    margin-left: 8px;
+    color: gray;
+    &-cnt {
+      margin-left: 2px;
+    }
+  }
+  &__hearts {
+    display: flex;
+    margin-left: 8px;
+    color: gray;
+    &-cnt {
+      margin-left: 2px;
+    }
+  }
+  &__reviews {
+    display: flex;
+    margin-left: 8px;
+    color: gray;
+    &-cnt {
+      margin-left: 2px;
+    }
+  }
+  &__tags {
+    display: flex;
+  }
+  &__tag {
+    padding: 4px;
+    margin-left: 4px;
+    width: max-content;
+    height: 22px;
+    background-color: lightgray;
+    opacity: 47%;
+    text-align: center;
+    font-family: Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+}
+
+.tag {
+  padding: 4px;
+  margin-left: 4px;
+  width: max-content;
+  height: 22px;
+  background-color: lightgray;
+  opacity: 47%;
+  text-align: center;
+  font-family: Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.p-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.postype-class {
+  // width: calc(100% - 370px);
+  margin: 24px 0;
+  display: flex;
+  justify-content: center;
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(3, 300px);
+  }
+  &-card {
+    // width: 50vw;
+    margin-left: 24px;
+    display: flex;
+    &__left {
+      &-category {
+        color: gray;
+        font-size: 12.8px;
+        margin-bottom: 12px;
+      }
+      &-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+      &-description {
+        width: 100%;
+        color: gray;
+        font-size: 14.5px;
+      }
+      &-tags {
+        display: flex;
+        margin-top: 12px;
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      &-image {
+        width: 144px;
+        height: 108px;
+        border: 1px solid #f9f9f9;
+        border-radius: 6px;
+        margin-left: 12px;
+      }
+      &-icons {
+        margin-left: 100px;
+      }
+    }
+    &__bottom {
+      &-profile {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+      }
+      &-nickname {
+        // font-size: 12px;
+      }
+      &-info {
+        display: flex;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.cl-icon {
+  margin: 24px 0 0 0;
+  width: 18px;
+  height: 18px;
+}
+
+.cl-icon:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 500px) {

@@ -1,0 +1,105 @@
+:root {
+  --white: #ffffff;
+  --underline: #fafafa;
+  --blue-button: #6d9fff;
+  --blue-text: #81abff;
+}
+
+.app {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  display: flex;
+  border-bottom: 1px solid var(--underline);
+}
+.banner__left {
+  display: flex;
+}
+.banner__right {
+  display: flex;
+  margin-top: 24px;
+  margin-left: 990px;
+}
+.banner__category {
+  margin-left: 19px;
+  margin-top: 24px;
+  font-weight: 500;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.downArrow {
+  margin-top: 16px;
+}
+
+.btn {
+  margin-left: 9px;
+}
+
+.signin {
+  padding: 7px 12px;
+  background-color: var(--white);
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.signup {
+  padding: 7px 12px;
+  background-color: var(--blue-button);
+  border: 1px solid var(--blue-button);
+  border-radius: 4px;
+  color: white;
+}
+
+.document {
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--white);
+  scrollbar-width: 4px;
+  scrollbar-color: gray;
+  scrollbar-face-color: var(--white);
+}
+
+.document::-webkit-scrollbar {
+  background-color: gray;
+  width: 4px;
+}
+
+.document::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+}
+
+.category__container {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-gap: 12px;
+  justify-content: center;
+}
+.category__text {
+  text-align: center;
+}
+
+.card {
+  border: 1px solid var(--blue-text);
+  border-radius: 8px;
+  height: 160px;
+  padding: 5px;
+}
+
+.blue {
+  color: var(--blue-text);
+}
+
+.text {
+  margin-left: 6px;
+}
+
+/*# sourceMappingURL=main.css.map */

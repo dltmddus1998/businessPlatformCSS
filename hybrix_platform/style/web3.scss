@@ -1,0 +1,122 @@
+:root {
+  --font-color: #343a40;
+  --card-background-color: #343a3f;
+  --progress-bar-color: #4650dd;
+}
+
+.document {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: fit-content;
+}
+
+.nft {
+  height: 100vh;
+  &-container {
+    width: calc(100% - 1300px);
+    margin: 12px auto;
+  }
+  &__title {
+    text-align: center;
+    color: var(--font-color);
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &__description {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 12px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    margin-top: 24px;
+    &-image {
+      height: 700px;
+      border-radius: 15px 15px 0 0;
+    }
+    &-middle {
+      padding: 12px;
+      &__title {
+        font-size: 22px;
+        font-weight: 600;
+      }
+      &__profile {
+        display: flex;
+        &-image {
+          margin-top: 12px;
+          width: 42px;
+          height: 42px;
+          border-radius: 50%;
+        }
+        &-nickname {
+          font-size: 18px;
+          margin: 20px 0 0 8px;
+          font-weight: 500;
+        }
+      }
+    }
+    &-sellInfo {
+      background-color: var(--card-background-color);
+      color: #fff;
+      padding: 8px;
+      border-radius: 0 0 15px 15px;
+      text-align: center;
+      &__top {
+        display: flex;
+        padding: 12px;
+        &-price {
+          margin: 0 300px 0 48px;
+          &__text {
+            font-size: smaller;
+            text-align: center;
+          }
+          &__nbr {
+            font-weight: bold;
+            text-align: center;
+            margin-top: 8px;
+          }
+        }
+        &-dueDate {
+          &__text {
+            font-size: smaller;
+            text-align: center;
+          }
+          &__status {
+            margin-top: 8px;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+      }
+      &__bottom {
+        &-progressBar {
+          display: flex;
+          justify-content: center;
+          margin: 20px 30px 0 30px;
+          &-progressed {
+            background-color: var(--progress-bar-color);
+            border-radius: 4px 0 0 4px;
+            width: 40%;
+            height: 10px;
+          }
+          &-notProgressed {
+            background-color: #fff;
+            border-radius: 0 4px 4px 0;
+            width: 60%;
+            height: 10px;
+          }
+        }
+        &-text {
+          margin: 12px 0;
+          font-size: 14.5px;
+        }
+      }
+    }
+  }
+}
