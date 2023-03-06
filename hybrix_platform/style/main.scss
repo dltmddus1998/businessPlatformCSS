@@ -29,6 +29,10 @@
   --phpoto-card-font-color10: #68b984;
   --photo-card-color11: #ffd8a9;
   --photo-card-font-color11: #e38b29;
+  --tag-font-color: #332c39;
+  --tag-background-color: #f0eeed;
+  --tag-clicked-background-color: #dddddd;
+  --icon-color-gray: #73777b;
 }
 
 .app {
@@ -1040,31 +1044,25 @@ hr {
   &__tags {
     display: flex;
   }
-  &__tag {
-    padding: 4px;
-    margin-left: 4px;
-    width: max-content;
-    height: 22px;
-    background-color: lightgray;
-    opacity: 47%;
-    text-align: center;
-    font-family: Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-    font-size: 15px;
-    border-radius: 4px;
-  }
 }
 
 .tag {
-  padding: 4px;
+  padding: 3px;
   margin-left: 4px;
   width: max-content;
   height: 22px;
-  background-color: lightgray;
+  background-color: var(--tag-background-color);
+  color: var(--tag-font-color);
   opacity: 47%;
   text-align: center;
   font-family: Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 4px;
+}
+
+.tag:hover {
+  cursor: pointer;
+  background-color: var(--tag-clicked-background-color);
 }
 
 .p-icon {
@@ -1073,8 +1071,7 @@ hr {
 }
 
 .postype-class {
-  // width: calc(100% - 370px);
-  margin: 24px 0;
+  margin: 48px 0;
   display: flex;
   justify-content: center;
   &-cards {
@@ -1122,17 +1119,56 @@ hr {
       }
     }
     &__bottom {
+      margin: 24px 0;
+      display: flex;
       &-profile {
         width: 36px;
         height: 36px;
         border-radius: 50%;
       }
       &-nickname {
-        // font-size: 12px;
+        font-size: 13px;
+        margin: 4px;
+      }
+      &-text {
+        display: flex;
+        flex-direction: column;
       }
       &-info {
         display: flex;
         font-size: 12px;
+        &__point {
+          color: var(--icon-color-gray);
+          margin-left: 8px;
+        }
+        &__views {
+          margin-left: 12px;
+          display: flex;
+          &-cnt {
+            margin-left: 4px;
+            color: var(--icon-color-gray);
+          }
+        }
+        &__hearts {
+          margin-left: 12px;
+          display: flex;
+          &-cnt {
+            margin-left: 4px;
+            color: var(--icon-color-gray);
+          }
+        }
+        &__reviews {
+          margin-left: 12px;
+          display: flex;
+          &-cnt {
+            margin-left: 2px;
+            color: var(--icon-color-gray);
+          }
+        }
+        &__date {
+          margin-left: 12px;
+          color: var(--icon-color-gray);
+        }
       }
     }
   }
