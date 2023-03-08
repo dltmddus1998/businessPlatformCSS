@@ -1,8 +1,14 @@
-import express from 'express';
-import cors from 'cors';
-import morgan from 'morgan';
-import helmet from 'helmet';
-import router from './router/app.js';
+// import express from 'express';
+// import cors from 'cors';
+// import morgan from 'morgan';
+// import helmet from 'helmet';
+// import router from './router/app.js';
+
+const express = require('express');
+const cors = require('cors');
+const morgan = require('morgan');
+const helmet = require('helmet');
+const router = require('./router/app.js');
 
 const app = express();
 

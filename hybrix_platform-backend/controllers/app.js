@@ -1,10 +1,12 @@
-import request from 'request';
-import { Configuration, OpenAIApi } from 'openai';
-import dotenv from 'dotenv';
+const request = require('request');
+const { Configuration, OpenAIApi } = require('openai');
+const dotenv = require('dotenv');
+// const sdk = require('api')('@elai/v1.0#4vn24l38ksx1u', undefined);
+const axios = require('axios');
 
 dotenv.config();
 
-export const papagoTranslate = (req, res) => {
+const papagoTranslate = (req, res) => {
   const client_id = 'u_ue30kU_n6HcdYWOg4l';
   const client_secret = 'OeZPlSv0v8';
   const query = 'Hi, how do you do?';
@@ -27,7 +29,7 @@ export const papagoTranslate = (req, res) => {
   });
 };
 
-export const dalle = async (req, res) => {
+const dalle = async (req, res) => {
   const { prompt } = req.body;
   const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
@@ -42,7 +44,7 @@ export const dalle = async (req, res) => {
   res.send(image_url);
 };
 
-export const chatgpt = async (req, res) => {
+const chatgpt = async (req, res) => {
   const { messages } = req.body;
   const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
@@ -56,62 +58,33 @@ export const chatgpt = async (req, res) => {
   res.send(result_message);
 };
 
-export const fineTune = async (req, res) => {};
+const elaiVideo = async (req, res) => {
+  const url = 'https://apis.elai.io/api/v1/videos';
+  const apiKey = process.env.ELAI_API_KEY;
 
-export const jukebox = async (req, res) => {
-  // const configuration = new Configuration({
-  //   apiKey: process.env.OPENAI_API_KEY,
-  // });
-  // const openai = new
-  // const configuration = new Configuration({
-  //   apiKey: process.env.OPENAI_API_KEY,
-  // });
-  // const openai = new OpenAIApi(configuration);
-  // const prompt = `Generate a piece of music in the style of classical piano.
-  // The piece should be 2 minutes long and start in the key of C major.
-  // Include a melody with a range of one octave and a tempo of 100 bpm.`;
-  // const model = 'jukebox-2b-gpt3';
-  // const temperature = 0.5;
-  // const top_p = 0.9;
-  // const length = 8192;
-  // const hparams = {
-  //   sample_rate: 44100,
-  //   n_samples: length,
-  //   temperature: temperature,
-  //   top_p: top_p,
-  //   mode: 'primed',
-  //   prompt: prompt,
-  //   bs: 1,
-  //   length: length,
-  //   model: model,
-  //   sample_length: length,
-  //   midi: 'False',
-  //   hop_fraction: [0.25, 0.25, 0.25],
-  //   levels: 3,
-  //   conditional: false,
-  //   use_reverb: false,
-  //   prompt_length_in_seconds: 12,
-  //   sample_rate: 44100,
-  //   train_level: '3',
-  // };
-  // openai
-  //   .createCompletion({
-  //     engine: 'davinci',
-  //     prompt,
-  //     max_tokens: length,
-  //     n: 1,
-  //     temperature,
-  //     top_p,
-  //     stop: null,
-  //     frequency_penalty: 0,
-  //     presence_penalty: 0,
-  //     ...hparams,
-  //   })
-  //   .then((response) => {
-  //     const music = response['data']['choices'][0]['text'];
-  //     console.log(music);
-  //   });
-  // // const music = response['data']['choices'][0]['text'];
-  // // console.log(response);
-  // // res.send(music);
+  const config = {
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      'Content-Type': 'application/json',
+    },
+  };
+  const requestData = { ...req.body };
+
+  axios
+    .post(url, requestData, config)
+    .then((resp) => {
+      res.json({
+        message: `Your video link is https://app.elai.io/video/${resp.data._id}`,
+      });
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+};
+
+module.exports = {
+  papagoTranslate,
+  dalle,
+  chatgpt,
+  elaiVideo,
 };
