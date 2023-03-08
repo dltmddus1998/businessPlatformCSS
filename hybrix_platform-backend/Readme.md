@@ -248,6 +248,6 @@ const elaiVideo = async (req, res) => {
 
 ![e](https://user-images.githubusercontent.com/73332608/223648660-4ce5e837-be92-463f-88fa-1dacce8b72a8.png)
 
-![f](https://user-images.githubusercontent.com/73332608/223648678-bffd9665-3342-44b3-9560-bf8856e8aaf9.png)e/Untitled.png)
+![f](https://user-images.githubusercontent.com/73332608/223648719-0f453ffe-6fd3-4d02-bd58-6faf9e5d75ac.png)
 
 +) *한국어 AI 목소리가 한 개 존재하긴 하나 제대로 작동 안함.*
