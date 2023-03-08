@@ -1,6 +1,9 @@
 # businessPlatformCSS
 비즈니스 플랫폼 CSS 구현해보기 
 
+## AI API TEST
+[☛ README link](https://github.com/dltmddus1998/businessPlatformCSS/blob/main/hybrix_platform-backend/Readme.md)
+
 ## launcher
 ### 화면 구현
 ![image](https://user-images.githubusercontent.com/73332608/218963819-2fb5dd00-d1c4-45fd-9480-882049d811fe.png)
