@@ -2,10 +2,10 @@ import os
 import replicate
 
 # Set the REPLICATE_API_TOKEN environment variable
-os.environ["REPLICATE_API_TOKEN"]="r8_8s5bCUFitT3Kp657zzKGYLfshLLlnUH2LL9T7";
+os.environ["REPLICATE_API_TOKEN"]="xxx";
 
 model = replicate.models.get("stability-ai/stable-diffusion")
-version = model.versions.get("db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf")
+version = model.versions.get("xxx")
 
 # https://replicate.com/stability-ai/stable-diffusion/versions/db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf#input
 inputs = {

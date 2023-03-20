@@ -3,7 +3,7 @@ import requests
 import io
 from pydub import AudioSegment
 
-openai.api_key = "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"
+openai.api_key = "xxx"
 
 def generate_music(prompt):
     completions = openai.Completion.create(
