@@ -1145,6 +1145,54 @@ hr {
   cursor: pointer;
 }
 
+.controls-dashboard__table {
+  border: 1px solid #f8ede3;
+  border-radius: 12px;
+  width: 1280px;
+  border-collapse: collapse;
+}
+.controls-dashboard__top {
+  display: flex;
+}
+.controls-dashboard__top-left {
+  margin-right: 24px;
+}
+.controls-dashboard__top-left__chartComp {
+  display: flex;
+}
+.controls-dashboard__bottom {
+  margin-top: 48px;
+}
+
+.chart-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 24px;
+}
+
+.chart-icon:hover {
+  cursor: pointer;
+}
+
+tr {
+  border: 1px solid #f8ede3;
+  border-radius: 12px;
+}
+
+td {
+  border: 1px solid #f8ede3;
+  border-radius: 12px;
+  width: 122px;
+  height: 20px;
+}
+
+.c-card {
+  width: 33.3333333333%;
+  height: 300px;
+  border: 1px solid #f8ede3;
+  border-radius: 12px;
+}
+
 @media screen and (min-width: 500px) {
   .photo-card-container {
     width: 33%;

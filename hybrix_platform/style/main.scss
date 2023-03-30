@@ -1184,6 +1184,56 @@ hr {
   cursor: pointer;
 }
 
+.controls-dashboard {
+  &__table {
+    border: 1px solid #f8ede3;
+    border-radius: 12px;
+    width: 1280px;
+    border-collapse: collapse;
+  }
+  &__top {
+    display: flex;
+    &-left {
+      margin-right: 24px;
+      &__chartComp {
+        display: flex;
+      }
+    }
+  }
+  &__bottom {
+    margin-top: 48px;
+  }
+}
+
+.chart-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 24px;
+}
+
+.chart-icon:hover {
+  cursor: pointer;
+}
+
+tr {
+  border: 1px solid #f8ede3;
+  border-radius: 12px;
+}
+
+td {
+  border: 1px solid #f8ede3;
+  border-radius: 12px;
+  width: 122px;
+  height: 20px;
+}
+
+.c-card {
+  width: calc(100% / 3);
+  height: 300px;
+  border: 1px solid #f8ede3;
+  border-radius: 12px;
+}
+
 @media screen and (min-width: 500px) {
   .photo-card-container {
     width: 33%;
