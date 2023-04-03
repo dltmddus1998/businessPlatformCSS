@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
     <script src="src/app.js"></script>
+    <script src=""></script>
     <title>b2b</title>
   </head>
   <body>
@@ -90,16 +91,41 @@
         <div class="controls-dashboard">
           <div class="controls-dashboard__top">
             <div class="controls-dashboard__top-left c-card">
-              <div class="controls-dashboard__top-left__title"></div>
-              <div class="contorls-dashboard__top-left__chartComp">
-                <div class="controls-dashboard__chart"></div>
-                <div class="controls-dashboard__chartDesc"></div>
+              <div class="controls-dashboard__top-left__title">Assignment</div>
+              <div class="controls-dashboard__top-left__chartComp">
+                <div class="controls-dashboard__chart">
+                  <svg class="controls-dashboard__chart-canvas" viewbox="0 0 34 34" width="170" height="170" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="controls-dashboard__chart-frame" cx="17" cy="17" r="16" />
+                    <circle class="controls-dashboard__chart-circle" cx="17" cy="17" r="16" stroke-dasharray="50 100" />
+                  </svg>
+                  <div class="controls-dashboard__chart-text">
+                    <div class="percentage">50%</div>
+                    <div class="assigned-text">Assigned</div>
+                  </div>
+                </div>
+                <div class="controls-dashboard__chartDesc">
+                  <div class="controls-dashboard__chartDesc-unassigned">
+                    <div class="controls-dashboard__chartDesc-unassigned__text chart-text">Unassigned</div>
+                    <div class="controls-dashboard__chartDesc-unassigned__numberWrap numberWrap">
+                      <div class="controls-dashboard__chartDesc-unassigned__numberWrap-color numberWrap-color"></div>
+                      <div class="controls-dashboard__chartDesc-unassigned__numberWrap-number numberWrap-number">173</div>
+                    </div>
+                  </div>
+                  <div class="controls-dashboard__chartDesc-assigned">
+                    <div class="chart-text">Assigned</div>
+                    <div class="numberWrap">
+                      <div class="numberWrap-color">0</div>
+                      div.numberWrap-
+                    </div>
+                  </div>
+                  <div class="controls-dashboard__chartDesc-needs"></div>
+                </div>
               </div>
             </div>
             <div class="controls-dashboard__top-right c-card"></div>
           </div>
           <div class="controls-dashboard__bottom">
-            <table class="controls-dashboard__table">
+            <!-- <table class="controls-dashboard__table">
               <tr>
                 <td>dd</td>
                 <td>dd</td>
@@ -122,7 +148,7 @@
                 <td></td>
                 <td></td>
               </tr>
-            </table>
+            </table> -->
           </div>
         </div>
       </main>
